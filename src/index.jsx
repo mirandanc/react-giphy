@@ -6,8 +6,10 @@ import '../assets/stylesheets/application.scss';
 const Hello = ({ name }) => {
   return (
     <div>
+      <h1>
       Hello,
-      {name}
+        {name}
+      </h1>
     </div>
   );
 };
