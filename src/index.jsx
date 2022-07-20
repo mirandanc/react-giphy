@@ -14,22 +14,7 @@ const Hello = ({ name }) => {
   );
 };
 
-handleClick = () => {
-  this.setState({
-    clicked: !this.state.clicked,
-    counter: this.state.count + 1
-  });
-}
-
-render () {
-  return (
-    <div className={this.state.clicked ? 'clicked' : null } onClick={this.handleClick}>
-      hello {this.props.name} {this.state.counter}
-    </div>
-  )
-}
-
 const root = document.getElementById('root');
 if (root) {
-  ReactDOM.render(<Hello name="World" />, root);
+  ReactDOM.render(<App />, root);
 }
